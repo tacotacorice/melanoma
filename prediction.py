@@ -1,4 +1,3 @@
-#! -*- coding: utf-8 -*-
 from keras.preprocessing import image
 #from keras.models import load_model
 from tensorflow.keras.models import load_model
@@ -61,7 +60,7 @@ if __name__ == '__main__':
             pred = model.predict(img_nad, batch_size=1, verbose=0) #予測
             score = np.max(pred)
             print(round(score,3),"Malignant" if score>Threshold else "Benign")
-            if key==27:
+            if key==27: #Escを押して終了
                 break
 
     cap.release()
