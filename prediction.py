@@ -1,5 +1,4 @@
 from keras.preprocessing import image
-#from keras.models import load_model
 from tensorflow.keras.models import load_model
 from keras.preprocessing.image import img_to_array, load_img
 import pygame.mixer
