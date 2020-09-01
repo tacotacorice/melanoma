@@ -39,8 +39,8 @@ model = tf.keras.Sequential([
 ])  
 
 if __name__ == '__main__':
-    model.load_weights('models/complete_data_efficient_weights.h5') # 重みを読込み
-    #model=load_model("models/complete_data_efficient_model.h5") #モデル+重みを使用できる場合はこちらを利用
+    model.load_weights('model_weights.h5') # 重みを読込み
+    #model=load_model("model.h5") #モデル+重みを使用できる場合はこちらを利用
         
     cap=cv2.VideoCapture(0)
     while True:
