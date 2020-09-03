@@ -13,7 +13,7 @@ from tensorflow.keras import layers as L
 import sys
 import cv2 
 
-Threshold=0.285 #学習時における検証用予測結果の2σを閾値とする
+Threshold=0.285 #学習時における検証用予測結果の2σ+中央値を閾値とする
         
 #model building
 IMAGE_SIZE = [384,384]
